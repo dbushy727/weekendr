@@ -24,7 +24,8 @@ try {
         ]
     ]);
 
-    var_dump($subscriber);
+echo $subscriber->id;
+
 } catch (\Exception $e) {
     http_response_code(400);
     throw new \Exception('There was a problem subscribing user: ' . $e->getMessage());

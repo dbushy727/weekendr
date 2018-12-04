@@ -127,9 +127,9 @@
 					$message.classList.add(type);
 					$message.classList.add('visible');
 
-					// window.setTimeout(function() {
-					// 	$message._hide();
-					// }, 3000);
+					window.setTimeout(function() {
+						$message._hide();
+					}, 3000);
 
 				};
 
@@ -164,10 +164,11 @@
 								data: { email: email, airport: airport },
 								success: function (data) {
 									$form.reset();
-									$message._show('success', data);
+									$message._show('success', 'Thank You');
 									$submit.disabled = false;
 								}, error: function (err) {
-									$message._show('failure', err.responseText);
+									console.log(err);
+									$message._show('failure', 'Something went wrong. Please check your email and try again.');
 									$submit.disabled = false;
 								}
 							});
