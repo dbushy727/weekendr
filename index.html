@@ -6,7 +6,8 @@
         <meta name="description" content="Friday to Sunday roundtrip tickets for under $200.">
         <meta name="keywords" content="Flights, Travel, Cheap Flights, Weekend, Weekend Travel, Weekend Flights, Roundtrip Tickets">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/main.css" />
         <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
 
         <meta property="og:title" content="Weekendr" />
@@ -42,10 +43,9 @@
             <div id="mc_embed_signup">
                 <form action="https://weekendr.us19.list-manage.com/subscribe/post?u=b8208b298e182f511941c318d&amp;id=03c2cc3ef1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-                    <input type="text" id="airport_choose" list="airports" name="airport_choose" class="required" placeholder="Your Airport Code or City">
-                    <input type="text" id="mce-AIRPORT" name="AIRPORT" style="display:none">
-                    <datalist id="airports">
-                    </datalist>
+                    <select class="js-data-example-ajax" id="mce-AIRPORT" name="AIRPORT">
+                        <option value="">Aiport Code or City</option>
+                    </select>
 
                     <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
 
@@ -74,6 +74,7 @@
             <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
             <script src="assets/js/main.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

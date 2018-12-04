@@ -773,7 +773,8 @@ input, select, textarea {
 	input[type="password"],
 	input[type="email"],
 	select,
-	textarea {
+	textarea,
+	span.select2-selection.select2-selection--single {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -802,7 +803,8 @@ input, select, textarea {
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
-		textarea:invalid {
+		textarea:invalid,
+		span.select2-selection.select2-selection--single:invalid {
 			box-shadow: none;
 		}
 
@@ -810,7 +812,8 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		select:focus,
-		textarea:focus {
+		textarea:focus,
+		span.select2-selection.select2-selection--single:focus {
 			-moz-animation: focus 0.1s;
 			-webkit-animation: focus 0.1s;
 			-ms-animation: focus 0.1s;
@@ -845,7 +848,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	select {
+	select,
+	span.select2-selection.select2-selection--single {
 		height: 2.75em;
 	}
 
@@ -1071,8 +1075,13 @@ input, select, textarea {
 
 		#mc-embedded-subscribe-form input[type="text"],
 		#mc-embedded-subscribe-form input[type="password"],
-		#mc-embedded-subscribe-form input[type="email"] {
-			width: 18em;
+		#mc-embedded-subscribe-form input[type="email"],
+		span.select2-selection.select2-selection--single,
+		span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open,
+		span.select2.select2-container.select2-container--default,
+		span.select2-container.select2-container--default.select2-container--open,
+		span.select2-dropdown.select2-dropdown--below {
+			width: 18em !important;
 		}
 
 		#mc-embedded-subscribe-form > * {
@@ -1094,10 +1103,17 @@ input, select, textarea {
 
 				#mc-embedded-subscribe-form input[type="text"],
 				#mc-embedded-subscribe-form input[type="password"],
-				#mc-embedded-subscribe-form input[type="email"]
+				#mc-embedded-subscribe-form input[type="email"],
+				span.select2-selection.select2-selection--single,
+				span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open,
+				span.select2.select2-container.select2-container--default,
+				span.select2-container.select2-container--default.select2-container--open,
+				span.select2-dropdown.select2-dropdown--below
 				 {
-					width: 100%;
+					width: 100% !important;
 				}
+
+				span#select2-airport_select-container { padding: 0; line-height: 40px; }
 
 				#mc-embedded-subscribe-form > * {
 					margin: 1.25em 0 0 0;
@@ -1114,6 +1130,15 @@ input, select, textarea {
 				}
 
 		}
+
+		input.select2-search__field, span.select2-dropdown { color: #aaa; }
+
+		.select2-container--default .select2-selection--single .select2-selection__rendered {
+		    color: #aaa;
+		    line-height: 250%;
+		}
+
+		.select2-container--default .select2-selection--single .select2-selection__arrow { top: 15%; }
 
 /* Footer */
 

@@ -9,7 +9,6 @@
 	"use strict";
 
 	var	$body = document.querySelector('body');
-	var places;
 
 	// Methods/polyfills.
 
@@ -140,37 +139,22 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
-
-				$('#airport_choose').on('keyup', _.debounce(function(e) {
-					var query = $(e.target).val();
-
-					if (!query) {
-						return;
-					}
-
-					$.ajax({
-						url: "places.php?place="+query,
-						type: "GET",
-						success: function (data) {
-							places = JSON.parse(data);
-							var iata_codes = jQuery.map(places.Places, function (place, index) {
-								return "<option value='"+place.PlaceName+"' id='"+place.PlaceId+"'>";
-							});
-
-							$('#airports').html(iata_codes);
-						}
-					});
-				}, 1000, {leading: true}));
-
-				$('#mc-embedded-subscribe-form').one('submit', function (e) {
-					e.preventDefault();
-
-					var place = $('#airport_choose').val();
-					console.log(places, place, _.find(places.Places, {PlaceName: place}));
-					var iata_code = _.find(places.Places, {PlaceName: place}).PlaceId;
-					$('#mce-AIRPORT').val(iata_code);
-
-					$(this).submit();
+				$('#mce-AIRPORT').select2({
+				  ajax: {
+				  	delay: 250,
+				    url: function (params) {
+				    	return "places.php?place="+params.term;
+				    },
+				    dataType: 'json',
+				    type: "GET",
+				    processResults: function (data) {
+				          return {
+				            results: _.map(data.Places, function (place) {
+				            	return {id: place.PlaceId, text: place.PlaceName};
+				            })
+				          };
+				        }
+				  }
 				});
 		})();
 })();
