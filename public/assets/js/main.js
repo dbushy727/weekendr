@@ -160,7 +160,7 @@
 
 							$.ajax({
 								method: 'POST',
-								url: 'subscribe.php',
+								url: '/subscribe.php',
 								data: { email: email, airport: airport },
 								success: function (data) {
 									console.log(data);
