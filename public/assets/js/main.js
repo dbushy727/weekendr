@@ -127,9 +127,9 @@
 					$message.classList.add(type);
 					$message.classList.add('visible');
 
-					window.setTimeout(function() {
-						$message._hide();
-					}, 3000);
+					// window.setTimeout(function() {
+					// 	$message._hide();
+					// }, 3000);
 
 				};
 
