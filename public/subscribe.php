@@ -12,12 +12,18 @@ $email = $_POST['email'] ?? '';
 $airport = $_POST['airport'] ?? '';
 
 if (empty($email) && empty($airport)) {
+    http_response_code(400);
     throw new \Exception('Email and airport are both required');
 }
 
-$mailchimp->addMember($list->id, $email, [
-    'status' => 'subscribed',
-    'merge_fields' => [
-        'AIRPORT' => $airport
-    ]
-]);
+try {
+    $mailchimp->addMember($list->id, $email, [
+        'status' => 'subscribed',
+        'merge_fields' => [
+            'AIRPORT' => $airport
+        ]
+    ]);
+} catch (\Exception $e) {
+    http_response_code(400);
+    throw new \Exception('There was a problem subscribing user: ' . $e->getMessage());
+}
