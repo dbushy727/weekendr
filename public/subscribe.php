@@ -1,8 +1,7 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
-http_response_code(400);
-throw new Exception('ERROR');
+
 $dotenv = new Dotenv\Dotenv(__DIR__ . '/..');
 $dotenv->load();
 
@@ -18,12 +17,14 @@ if (empty($email) && empty($airport)) {
 }
 
 try {
-    $mailchimp->addMember($list->id, $email, [
+    $subscriber = $mailchimp->addMember($list->id, $email, [
         'status' => 'subscribed',
         'merge_fields' => [
             'AIRPORT' => $airport
         ]
     ]);
+
+    var_dump($subscriber);
 } catch (\Exception $e) {
     http_response_code(400);
     throw new \Exception('There was a problem subscribing user: ' . $e->getMessage());

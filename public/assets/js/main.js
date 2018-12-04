@@ -164,11 +164,10 @@
 								data: { email: email, airport: airport },
 								success: function (data) {
 									$form.reset();
-									$message._show('success', 'Thank you!');
+									$message._show('success', data);
 									$submit.disabled = false;
 								}, error: function (err) {
-									console.log(err);
-									$message._show('failure', 'Something went wrong. Please check your email and try again.');
+									$message._show('failure', err.responseText);
 									$submit.disabled = false;
 								}
 							});
