@@ -139,6 +139,44 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
+				$form.addEventListener('submit', function(event) {
+
+					event.stopPropagation();
+					event.preventDefault();
+
+					// Hide message.
+						$message._hide();
+
+					// Disable submit.
+						$submit.disabled = true;
+
+					// Process form.
+					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
+					// but there's enough here to piece together a working AJAX submission call that does.
+						window.setTimeout(function() {
+
+							var email = $('#mce-EMAIL').val();
+							var airport = $('#mce-AIRPORT').val();
+
+							$.ajax({
+								method: 'POST',
+								url: 'subscribe.php',
+								data: { email: email, airport: airport },
+								success: function (data) {
+									console.log(data);
+									// Reset form.
+									$form.reset();
+									$message._show('success', 'Thank you!');
+									$submit.disabled = false;
+								}, error: function (err) {
+									console.log(err);
+									$message._show('failure', 'Something went wrong. Please check your email and try again.');
+									$submit.disabled = false;
+								}
+							});
+						}, 750);
+
+				});
 				$('#mce-AIRPORT').select2({
 				  ajax: {
 				  	delay: 250,

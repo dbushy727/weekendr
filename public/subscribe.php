@@ -17,4 +17,7 @@ if (empty($email) && empty($airport)) {
 
 $mailchimp->addMember($list->id, $email, [
     'status' => 'subscribed',
+    'merge_fields' => [
+        'AIRPORT' => $airport
+    ]
 ]);
