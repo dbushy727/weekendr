@@ -9,6 +9,7 @@
 	"use strict";
 
 	var	$body = document.querySelector('body');
+	var places;
 
 	// Methods/polyfills.
 
@@ -139,36 +140,37 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
-				// $form.addEventListener('submit', function(event) {
 
-				// 	event.stopPropagation();
-				// 	event.preventDefault();
+				$('#airport_choose').on('keyup', _.debounce(function(e) {
+					var query = $(e.target).val();
 
-				// 	// Hide message.
-				// 		$message._hide();
+					if (!query) {
+						return;
+					}
 
-				// 	// Disable submit.
-				// 		$submit.disabled = true;
+					$.ajax({
+						url: "places.php?place="+query,
+						type: "GET",
+						success: function (data) {
+							places = JSON.parse(data);
+							var iata_codes = jQuery.map(places.Places, function (place, index) {
+								return "<option value='"+place.PlaceName+"' id='"+place.PlaceId+"'>";
+							});
 
-				// 	// Process form.
-				// 	// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
-				// 	// but there's enough here to piece together a working AJAX submission call that does.
-				// 		window.setTimeout(function() {
+							$('#airports').html(iata_codes);
+						}
+					});
+				}, 1000, {leading: true}));
 
-				// 			// Reset form.
-				// 				$form.reset();
+				$('#mc-embedded-subscribe-form').one('submit', function (e) {
+					e.preventDefault();
 
-				// 			// Enable submit.
-				// 				$submit.disabled = false;
+					var place = $('#airport_choose').val();
+					console.log(places, place, _.find(places.Places, {PlaceName: place}));
+					var iata_code = _.find(places.Places, {PlaceName: place}).PlaceId;
+					$('#mce-AIRPORT').val(iata_code);
 
-				// 			// Show message.
-				// 				$message._show('success', 'Thank you!');
-				// 				//$message._show('failure', 'Something went wrong. Please try again.');
-
-				// 		}, 750);
-
-				// });
-
+					$(this).submit();
+				});
 		})();
-
 })();

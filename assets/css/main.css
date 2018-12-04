@@ -1092,9 +1092,10 @@ input, select, textarea {
 				flex-direction: column;
 			}
 
-				#mc-embedded-subscribe-form input[type="type"],
+				#mc-embedded-subscribe-form input[type="text"],
 				#mc-embedded-subscribe-form input[type="password"],
-				#mc-embedded-subscribe-form input[type="email"] {
+				#mc-embedded-subscribe-form input[type="email"]
+				 {
 					width: 100%;
 				}
 
