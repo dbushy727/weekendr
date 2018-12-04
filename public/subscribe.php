@@ -1,7 +1,8 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
-
+http_response_code(400);
+throw new Exception('ERROR');
 $dotenv = new Dotenv\Dotenv(__DIR__ . '/..');
 $dotenv->load();
 
