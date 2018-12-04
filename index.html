@@ -86,5 +86,24 @@
 
               gtag('config', 'UA-80504881-4');
             </script>
+
+            <script type="text/javascript">
+                        window.onload = function() {
+                            var desktopFallback = "https://weekendr.io",
+                            mobileFallback = "https://weekendr.io";
+                            if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+                                // window.location = app;
+                                // window.setTimeout(function() {
+                                    window.location = mobileFallback;
+                                // }, 25);
+                            } else {
+                                window.location = desktopFallback;
+                            }
+                            function killPopup() {
+                                window.removeEventListener('pagehide', killPopup);
+                            }
+                            window.addEventListener('pagehide', killPopup);
+                        };
+                    </script>
 	</body>
 </html>
