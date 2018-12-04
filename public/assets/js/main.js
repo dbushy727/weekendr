@@ -163,8 +163,6 @@
 								url: '/subscribe.php',
 								data: { email: email, airport: airport },
 								success: function (data) {
-									console.log(data);
-									// Reset form.
 									$form.reset();
 									$message._show('success', 'Thank you!');
 									$submit.disabled = false;
