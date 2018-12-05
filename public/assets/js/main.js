@@ -163,6 +163,7 @@
 								url: '/subscribe.php',
 								data: { email: email, airport: airport },
 								success: function (data) {
+									window.location.href = '/thank-you.html';
 									$form.reset();
 									$message._show('success', 'Thank You');
 									$submit.disabled = false;
