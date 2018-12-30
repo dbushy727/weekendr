@@ -12,11 +12,12 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_POSTFIELDS => "",
   CURLOPT_HTTPHEADER => array(
-    "Postman-Token: 0ba7fe01-32cd-4037-9387-21c84049e3d4",
     "X-RapidAPI-Key: KL2ydf89evmsh9mqKwl4neWBZ0VMp1KOFacjsnjsrmbmUm8o2H",
     "cache-control: no-cache"
   ),
 ));
+
+                  https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=New York
 
 $response = curl_exec($curl);
 $err = curl_error($curl);
