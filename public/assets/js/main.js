@@ -169,7 +169,7 @@
 									$submit.disabled = false;
 								}, error: function (err) {
 									console.log(err);
-									$message._show('failure', 'Something went wrong. Please check your email and try again.');
+									$message._show('failure', 'Something went wrong. Please check your email address, airport code and try again.');
 									$submit.disabled = false;
 								}
 							});

@@ -11,7 +11,7 @@ $list = $mailchimp->getLists()->lists[0];
 $email = $_POST['email'] ?? '';
 $airport = $_POST['airport'] ?? '';
 
-if (empty($email) && empty($airport)) {
+if (empty($email) || empty($airport)) {
     http_response_code(400);
     throw new \Exception('Email and airport are both required');
 }
