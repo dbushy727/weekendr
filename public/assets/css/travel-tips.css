@@ -2331,6 +2331,11 @@ input, select, textarea {
                 width: 100%;
             }
 
+                .image.fit img.destination-main-image {
+                    object-fit: cover;
+                    height: 25em;
+                }
+
         .image.main {
             display: block;
             margin: 0 0 3em 0;
