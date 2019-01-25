@@ -39,7 +39,7 @@
 							'images/girl-canyon-1.jpg': 'center',
 							'images/man-airport-1.jpg': 'center',
 							'images/airplane-seats-1.jpg': 'center',
-							'images/couple-forest-1.jpg': 'bottom',
+							'images/couple-forest-2.jpg': 'bottom',
 							'images/man-lake-mountains-1.jpg': 'center',
 							'images/airplane-sunset-1.jpg': 'center'
 						},
