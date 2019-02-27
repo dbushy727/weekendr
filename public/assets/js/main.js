@@ -36,12 +36,12 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/girl-canyon.jpg': 'center',
-							'images/man-airport.jpg': 'center',
-							'images/airplane-seats.jpg': 'center',
-							'images/couple-forest.jpg': 'bottom',
-							'images/man-lake-mountains.jpg': 'center',
-							'images/airplane-sunset.jpg': 'center'
+							'/images/girl-canyon.jpg': 'center',
+							'/images/man-airport.jpg': 'center',
+							'/images/airplane-seats.jpg': 'center',
+							'/images/couple-forest.jpg': 'bottom',
+							'/images/man-lake-mountains.jpg': 'center',
+							'/images/airplane-sunset.jpg': 'center'
 						},
 
 					// Delay.
