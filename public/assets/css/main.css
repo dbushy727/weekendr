@@ -1230,3 +1230,55 @@ input, select, textarea {
 			}
 
 		}
+
+/*
+CUSTOM CSS
+ */
+
+#menu-icon {
+	position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.25em;
+    background: rgba(0,0,0,0.5);
+    padding: 0.75em;
+    color: #efefef;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#menu {
+	width: 20%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	background: #777;
+	opacity: 0.5;
+	padding: 6em 2em;
+	text-align: left;
+	z-index: 5;
+	display: none;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul a li {
+	line-height: 3em;
+}
+
+#menu ul a {
+	color: rgba(255, 255, 255, 0.5);
+	border: none;
+}
+
+#menu ul a li:hover {
+	background: #333;
+}
+
+#menu ul a:hover {
+	color: rgba(255, 255, 255, 0.8);
+	border: none;
+}
