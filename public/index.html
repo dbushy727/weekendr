@@ -2,26 +2,23 @@
 <html>
 	<head>
 		<title>Weekendr</title>
+
+        <meta charset="utf-8" />
+        <meta name="description" content="Friday to Sunday roundtrip tickets for under $300.">
+        <meta name="keywords" content="Flights, Travel, Cheap Flights, Weekend, Weekend Travel, Weekend Flights, Roundtrip Tickets">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta property="og:title" content="Weekendr" />
+        <meta property="og:description" content="Friday to Sunday roundtrip tickets for under $300." />
+        <meta property="og:image" content="https://weekendr.io/images/big-logo.jpg" />
+        <meta property="og:url" content="https://weekendr.io" />
+        <meta name="twitter:title" content="Weekendr">
+        <meta name="twitter:description" content="Friday to Sunday roundtrip tickets for under $300.">
+        <meta name="twitter:image" content="https://weekendr.io/images/big-logo.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel='shortcut icon' type='image/x-icon' href='/images/logo.png' />
-
-        <!-- META GLOBAL -->
-            <meta charset="utf-8" />
-            <meta name="description" content="Friday to Sunday roundtrip tickets for under $200.">
-            <meta name="keywords" content="Flights, Travel, Cheap Flights, Weekend, Weekend Travel, Weekend Flights, Roundtrip Tickets">
-            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-        <!-- META SOCIAL -->
-            <meta property="og:title" content="Weekendr" />
-            <meta property="og:description" content="Friday to Sunday roundtrip tickets for under $200." />
-            <meta property="og:image" content="https://weekendr.io/images/big-logo.jpg" />
-            <meta property="og:url" content="https://weekendr.io" />
-
-            <meta name="twitter:title" content="Weekendr">
-            <meta name="twitter:description" content="Friday to Sunday roundtrip tickets for under $200.">
-            <meta name="twitter:image" content="https://weekendr.io/images/big-logo.jpg">
-            <meta name="twitter:card" content="summary_large_image">
 
         <!-- Facebook Pixel Code -->
             <script>
@@ -42,16 +39,36 @@
         <!-- End Facebook Pixel Code -->
 	</head>
 	<body class="is-preload">
-		<!-- Header -->
+        <!-- Nav -->
+        <div id="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="/how-it-works">How It Works</a></li>
+                    <li><a href="/travel-tips">Travel Tips</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+
+        <!-- Header -->
     		<header id="header">
     			<h1>Weekendr</h1>
-                <h4>Coming Soon</h4>
-    			<p>Friday to Sunday roundtrip tickets for under $200.</p>
+
+    			<p>Friday to Sunday roundtrip tickets for under $300.</p>
                 <p>Weekendr is a notification service that will let you know <br/>
-                    when we find weekend roundtrip tickets, under $200, leaving <br/>
-                    from your city so you can have a fun weekend somewhere new.</p>
+                when we find weekend roundtrip tickets, under $300, leaving <br/>
+                from your city so you can have a fun weekend somewhere new.</p>
                 <p>Sign up to get free access when we launch.</p>
     		</header>
+
+		<!-- Signup Form -->
 
         <!-- Begin Mailchimp Signup Form -->
             <div id="mc_embed_signup">
@@ -77,11 +94,10 @@
                 <ul class="icons">
                     <li><a target="_BLANK" href="https://twitter.com/realDanBush" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a target="_BLANK" href="mailto:danny@weekendr.io" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                    <li><a target="_BLANK" href="https://blog.bushka.net"><span class="label">Blog</span></a></li>
                     <li><a target="_BLANK" href="/travel-tips"><span class="label">Travel Tips</span></a></li>
-    			</ul>
-    			<ul class="copyright">
-    				<li>&copy; Weekendr</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Weekendr</li>
                     <li><a href="/privacy-policy.html">Privacy Policy</a></li>
                     <li>Credits: <a target="_BLANK" href="https://unsplash.com">Images from Unsplash.com</a></li>
     			</ul>
@@ -91,8 +107,14 @@
             <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+            <script src="/assets/js/jquery.min.js"></script>
+            <script src="/assets/js/browser.min.js"></script>
+            <script src="/assets/js/breakpoints.min.js"></script>
+            <script src="/assets/js/util.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-            <script src="assets/js/main.js"></script>
+
+            <script src="/assets/js/main.js"></script>
+            <script src="/assets/js/menu.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80504881-4"></script>
