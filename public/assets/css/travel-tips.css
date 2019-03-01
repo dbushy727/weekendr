@@ -2329,6 +2329,15 @@ input, select, textarea {
 
             .image.fit img {
                 width: 100%;
+                object-fit: cover;
+            }
+
+            .image.fit img.mini {
+                height: 15em;
+            }
+
+            .image.fit img.big {
+                height: 24em;
             }
 
                 .image.fit img.destination-main-image {
@@ -3312,3 +3321,4 @@ input, select, textarea {
             }
 
         }
+
