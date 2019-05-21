@@ -3318,7 +3318,7 @@ input, select, textarea {
 
             #wrapper > * > .inner {
                 padding: 0 1.25em;
-                font-size: 0.7em;
+                /*font-size: 0.7em;*/
             }
 
         }
