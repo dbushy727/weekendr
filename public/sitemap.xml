@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://weekendr.io/</loc>
+  <lastmod>2019-05-21T22:47:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/</loc>
+  <lastmod>2019-05-21T22:35:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/privacy-policy.html</loc>
+  <lastmod>2018-12-18T21:04:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/index.html</loc>
+  <lastmod>2019-05-21T22:47:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/nashville.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/san-francisco.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/moab.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/orlando.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/atlanta.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/phoenix.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/new-orleans.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/toronto.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://weekendr.io/travel-tips/chicago.html</loc>
+  <lastmod>2019-05-21T23:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

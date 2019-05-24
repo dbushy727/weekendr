@@ -1,0 +1,129 @@
+NYCA-sky  175, JFK-sky 37, EWR-sky 36, LGA-sky 15
+SFO-sky 38
+LAXA-sky  4, LAX-sky 14, SNA-sky 3
+YYZ-sky 12, YTOA-sky  6
+CHIA-sky  11, ORD-sky 3
+BOS-sky 12
+IND-sky 9
+ATL-sky 5, ATLA-sky  3
+DCA-sky 3, BWI-sky 2, WASA-sky 3
+MIA-sky 3, FLLA-sky  3, FLL-sky 1
+DENA-sky  4, DEN-sky 3
+MSP-sky 7
+YVRA-sky 5, YVR-sky 1
+SANA-sky  4, SAN-sky 2
+SJC-sky 4, SJOA-sky  2
+PARI-sky  6
+AUS-sky 6
+PHX-sky 4, PHXA-sky  1
+SEAA-sky  3, SEA-sky 2
+CLT-sky 5
+DFWA-sky  3, DFW-sky 1
+CVG-sky 3, CVGA-sky  1
+YUL-sky 3, YMQA-sky  1
+PDX-sky 4
+SLC-sky 4
+IAH-sky 1, HOUA-sky  1, HOU-sky 1
+BUF-sky 3
+RDU-sky 3
+RIC-sky 3
+SAT-sky 1, SATA-sky  1
+LAS-sky 2
+MFE-sky 2
+YYC-sky 2
+PHLA-sky  2
+DTW-sky 2
+OAK-sky 2
+RNO-sky 2
+HSV-sky 2
+STL-sky 2
+PIT-sky 2
+ASE-sky 1
+GEG-sky 1
+CHS-sky 1
+YLW-sky 1
+SBA-sky 1
+OMA-sky 1
+ITH-sky 1
+BHM-sky 1
+RDM-sky 1
+MSN-sky 1
+
+
+
+
+
+BNA-sky 1
+SKP-sky 1
+SYR-sky 1
+LGW-sky 1
+TLL-sky 1
+KIEV-sky  1
+YOWA-sky  1
+MKE-sky 1
+ARN-sky 1
+ALB-sky 1
+LIM-sky 1
+ILM-sky 1
+MDW-sky 1
+PER-sky 1
+MST-sky 1
+MUC-sky 1
+MCT-sky 1
+BNE-sky 1
+BOG-sky 1
+IAD-sky 1
+CLE-sky 1
+MHT-sky 1
+ATH-sky 1
+LHE-sky 1
+CHO-sky 1
+SAW-sky 1
+PNS-sky 1
+HEL-sky 1
+YYG-sky 1
+DXBA-sky  1
+MSY-sky 1
+GYD-sky 1
+BGO-sky 1
+STN-sky 1
+CDG-sky 1
+TPA-sky 1
+ORY-sky 1
+KRK-sky 1
+
+
+
+--
+
+BLR-sky 4
+LOND-sky  5, LHR-sky 2
+BCN-sky 3
+AMS-sky 2
+SIN-sky 2, SINS-sky  1
+WAW-sky 2
+MOSC-sky  2
+SYDA-sky  2
+FRA-sky 2, HHN-sky 1
+HAM-sky 2
+MEX-sky 2
+MAD-sky 2
+BERL-sky  2
+OSL-sky 2
+TELA-sky  1, TLV-sky 1
+VENI-sky  1
+ISTA-sky  1
+ALF-sky 1
+VCP-sky 1
+FUK-sky 1
+TYOA-sky  1
+AKLN-sky  1
+MEL-sky 1
+EDI-sky 1
+BKK-sky  1
+BOM-sky 1
+CGK-sky 1
+HYD-sky 1
+CRL-sky 1
+NTE-sky 1
+SCLA-sky  1
